@@ -1,0 +1,44 @@
+2018-03-15 14:18:35,629 [main] ERROR o.s.boot.SpringApplication -[SpringApplication.java:771]- Application startup failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@3:53 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@4:61 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@5:57 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:60 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.util.PropertySetter@2e385cce - Failed to invoke valueOf{} method in class [ch.qos.logback.core.util.FileSize] with value [maxFileSize_IS_UNDEFINED]
+ERROR in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1946988038 - maxFileSize property is mandatory.
+ERROR in ch.qos.logback.core.joran.util.PropertySetter@26d9b808 - Failed to invoke valueOf{} method in class [ch.qos.logback.core.util.FileSize] with value [maxFileSize_IS_UNDEFINED]
+ERROR in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@259564670 - maxFileSize property is mandatory.
+ERROR in ch.qos.logback.core.joran.util.PropertySetter@644baf4a - Failed to invoke valueOf{} method in class [ch.qos.logback.core.util.FileSize] with value [maxFileSize_IS_UNDEFINED]
+ERROR in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1965445467 - maxFileSize property is mandatory.
+	at org.springframework.boot.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:315)
+	at org.springframework.boot.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:276)
+	at org.springframework.boot.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:239)
+	at org.springframework.boot.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:212)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@3:53 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@4:61 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@5:57 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:60 - no applicable action for [springProperty], current ElementPath  is [[configuration][springProperty]]
+ERROR in ch.qos.logback.core.joran.util.PropertySetter@2e385cce - Failed to invoke valueOf{} method in class [ch.qos.logback.core.util.FileSize] with value [maxFileSize_IS_UNDEFINED]
+ERROR in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1946988038 - maxFileSize property is mandatory.
+ERROR in ch.qos.logback.core.joran.util.PropertySetter@26d9b808 - Failed to invoke valueOf{} method in class [ch.qos.logback.core.util.FileSize] with value [maxFileSize_IS_UNDEFINED]
+ERROR in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@259564670 - maxFileSize property is mandatory.
+ERROR in ch.qos.logback.core.joran.util.PropertySetter@644baf4a - Failed to invoke valueOf{} method in class [ch.qos.logback.core.util.FileSize] with value [maxFileSize_IS_UNDEFINED]
+ERROR in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1965445467 - maxFileSize property is mandatory.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:162)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:56)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:115)
+	at org.springframework.boot.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:308)
+	... 14 common frames omitted
